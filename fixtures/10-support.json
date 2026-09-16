@@ -1,0 +1,20 @@
+{
+  "event_id": "demo-support-1",
+  "question": "What are your opening hours?",
+  "contact": {
+    "name": "Alex Demo",
+    "email": "support@example.invalid",
+    "timezone": "America/New_York",
+    "consent": true,
+    "consent_source": "Synthetic fixture; no real recipient"
+  },
+  "test_data": {
+    "ai": {
+      "intent": "public_faq",
+      "answer_ids": [
+        "demo-hours"
+      ],
+      "reason": "Question asks opening hours"
+    }
+  }
+}

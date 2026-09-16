@@ -1,0 +1,29 @@
+{
+  "event_id": "demo-content-1",
+  "source_text": "Every service enquiry should have a named owner and a next action. Keeping the agreed scope alongside the quote makes the handoff easier to review.",
+  "source_url": "https://example.com/operations",
+  "test_data": {
+    "ai": {
+      "posts": [
+        {
+          "platform": "linkedin",
+          "idea": "Ownership",
+          "source_quote": "a named owner and a next action",
+          "text": "Give every service enquiry a named owner and a next action. These two fields make a handoff easier to review."
+        },
+        {
+          "platform": "x",
+          "idea": "Scope",
+          "source_quote": "Keeping the agreed scope alongside the quote",
+          "text": "Keep the agreed scope alongside the quote so the next person has the context."
+        },
+        {
+          "platform": "instagram",
+          "idea": "Handoff",
+          "source_quote": "makes the handoff easier to review",
+          "text": "Clear ownership and visible scope make a handoff easier to review."
+        }
+      ]
+    }
+  }
+}

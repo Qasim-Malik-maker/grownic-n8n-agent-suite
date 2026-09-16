@@ -1,0 +1,16 @@
+{
+ "client_id":"grownic-demo","business_name":"Grownic Demo Services","public_n8n_url":"http://localhost:5678","mode":"test","outbound_enabled":false,"timezone":"America/New_York",
+ "from_email":"Grownic <hello@grownic.dev>","reply_to":"hello@grownic.dev","sender_name":"Qasim Malik","owner_email":"hello@grownic.dev","postal_address":"SET_CLIENT_BUSINESS_POSTAL_ADDRESS",
+ "booking_url":"https://cal.com/REPLACE_CLIENT/consultation","cal_event_type_id":0,"cal_bookings_version":"2026-02-25","cal_slots_version":"2024-09-04",
+ "auto_send_transactional":false,"auto_followup":false,"auto_book":false,"auto_support":false,
+ "twilio_account_sid":"","twilio_messaging_service_sid":"","openai_model":"gpt-5-mini","openai_reasoning_effort":"minimal",
+ "max_actions_per_minute":6,"max_actions_per_day":200,"send_window":{"start_hour":9,"end_hour":18,"weekdays":[1,2,3,4,5]},
+ "followup_days":[1,3,7,14],"followup_max_age_days":30,"quote_valid_days":14,"currency":"USD","tax_basis_points":0,"pricebook_version":"DEMO-1",
+ "pricebook":[{"id":"consultation","name":"On-site service assessment (DEMO)","unit_price_minor":12500,"unit":"visit","min_quantity":1,"max_quantity":3},{"id":"cleaning","name":"Commercial cleaning (DEMO)","unit_price_minor":8500,"unit":"hour","min_quantity":2,"max_quantity":40}],
+ "service_areas":["New York"],"qualifying_question":"Where do you need the service, and when would you like it completed?",
+ "icp":"Independent US or UK local service companies with repetitive customer intake or administrative work.","lead_search_query":"UK independent property management contact email official website","excluded_domains":["linkedin.com","facebook.com","yelp.com","clutch.co","crunchbase.com","zoominfo.com","apollo.io"],
+ "voice_transfer_number":"","content_platforms":["linkedin","x","instagram"],"publora_connections":{},
+ "voice_profile":"Direct, practical, plain English. No fabricated results, hype, invented experience, false scarcity or unverified numerical claims. At most two hashtags.",
+ "meta_api_version":"v23.0","meta_ad_account_id":"","meta_page_id":"","meta_adset_id":"","meta_image_hash":"","meta_landing_url":"","marketing_min_impressions":1000,"marketing_min_conversions":5,
+ "job":{"id":"office-coordinator-demo","title":"Office Coordinator (DEMO)","requirements":[{"id":"scheduling","description":"Evidence of managing appointment schedules","weight":40},{"id":"customer_service","description":"Evidence of direct customer service work","weight":35},{"id":"spreadsheets","description":"Evidence of spreadsheets for operational tracking","weight":25}]}
+}

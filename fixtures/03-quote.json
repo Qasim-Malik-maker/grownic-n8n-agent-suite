@@ -1,0 +1,20 @@
+{
+  "event_id": "demo-quote-1",
+  "contact": {
+    "name": "Alex Demo",
+    "email": "quote@example.invalid",
+    "timezone": "America/New_York",
+    "consent": true,
+    "consent_source": "Synthetic fixture; no real recipient"
+  },
+  "items": [
+    {
+      "service_id": "cleaning",
+      "quantity": 3
+    },
+    {
+      "service_id": "consultation",
+      "quantity": 1
+    }
+  ]
+}

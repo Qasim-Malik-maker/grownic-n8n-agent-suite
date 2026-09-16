@@ -1,0 +1,35 @@
+{
+  "event_id": "demo-recruitment-1",
+  "contact": {
+    "name": "Alex Demo",
+    "email": "candidate@example.invalid",
+    "timezone": "America/New_York",
+    "consent": true,
+    "consent_source": "Synthetic fixture; no real recipient"
+  },
+  "resume_text": "I managed appointment schedules for a maintenance company and used spreadsheets for operational tracking.",
+  "test_data": {
+    "ai": {
+      "requirements": [
+        {
+          "id": "scheduling",
+          "status": "evidenced",
+          "quote": "managed appointment schedules"
+        },
+        {
+          "id": "customer_service",
+          "status": "unclear",
+          "quote": ""
+        },
+        {
+          "id": "spreadsheets",
+          "status": "evidenced",
+          "quote": "used spreadsheets for operational tracking"
+        }
+      ],
+      "questions": [
+        "Please describe how you handled schedule changes."
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "event_id": "demo-leads-1",
+  "query": "Synthetic fixture",
+  "test_data": {
+    "upstream": {
+      "results": [
+        {
+          "url": "https://example.com/contact",
+          "raw_content": "Example Services provides building maintenance. Public business inbox: hello@example.com."
+        }
+      ]
+    },
+    "ai": {
+      "leads": [
+        {
+          "source_id": "0",
+          "company": "Example Services",
+          "company_quote": "Example Services",
+          "email": "hello@example.com",
+          "email_quote": "hello@example.com",
+          "description": "Building maintenance",
+          "fit_reason": "Service enquiries",
+          "fit_quote": "provides building maintenance"
+        }
+      ]
+    }
+  }
+}

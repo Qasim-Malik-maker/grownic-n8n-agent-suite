@@ -1,0 +1,12 @@
+{
+  "documents": [
+    {
+      "id": "demo-hours",
+      "title": "Opening hours",
+      "question": "What are your opening hours?",
+      "answer": "Our demo office is open Monday to Friday, 9am to 5pm, New York time.",
+      "source_url": "https://example.com/hours",
+      "approved": true
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "36f23f2b8ad34df1",
+  "name": "Grownic | 90 Execution Error Monitor",
+  "active": false,
+  "nodes": [
+    {
+      "id": "6521e2e5be48dce0",
+      "name": "Execution Failed",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "be8222e657edb1f3",
+      "name": "Record Failure",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.7,
+      "position": [
+        230,
+        0
+      ],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO grownic.failures(workflow,execution_id,message) VALUES($1,$2,$3) RETURNING id;",
+        "options": {
+          "queryReplacement": "={{ [$json.workflow?.name||\"unknown\",$json.execution?.id||\"\",($json.execution?.error?.message||$json.trigger?.error?.message||\"Unknown error\").slice(0,3000)] }}",
+          "queryBatching": "independently"
+        }
+      },
+      "credentials": {
+        "postgres": {
+          "id": "grc-Postgres",
+          "name": "Grownic Postgres"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Execution Failed": {
+      "main": [
+        [
+          {
+            "node": "Record Failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "UTC",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "all",
+    "executionTimeout": 120
+  },
+  "pinData": {},
+  "versionId": "647f3607-87e7-4f32-a2c0-8daef805752a",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

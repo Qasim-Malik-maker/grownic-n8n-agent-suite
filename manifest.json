@@ -1,0 +1,88 @@
+{
+  "package": "Grownic 10-Agent Suite",
+  "version": "1.1.1",
+  "built": "2026-09-16T04:51:43.045Z",
+  "n8n_version": "2.38.7",
+  "workflows": [
+    {
+      "file": "workflows/01-speed-to-lead.json",
+      "id": "dc8455e6c1470948",
+      "name": "Grownic | 01 Speed to Lead"
+    },
+    {
+      "file": "workflows/02-lead-generation.json",
+      "id": "c504cc86e5a6ef91",
+      "name": "Grownic | 02 Lead Generation"
+    },
+    {
+      "file": "workflows/03-quote.json",
+      "id": "c90c3e7029cc5c0f",
+      "name": "Grownic | 03 Quote"
+    },
+    {
+      "file": "workflows/04-voice.json",
+      "id": "fa60d54b4d4d56f8",
+      "name": "Grownic | 04 Voice Receptionist"
+    },
+    {
+      "file": "workflows/05-follow-up.json",
+      "id": "82c43a5febb3c6c1",
+      "name": "Grownic | 05 Follow Up"
+    },
+    {
+      "file": "workflows/06-appointment.json",
+      "id": "07094f7345f8405f",
+      "name": "Grownic | 06 Appointment Setting"
+    },
+    {
+      "file": "workflows/07-recruitment.json",
+      "id": "ad5db9611a88f943",
+      "name": "Grownic | 07 Recruitment Review"
+    },
+    {
+      "file": "workflows/08-content.json",
+      "id": "b322ec4d4f4f534d",
+      "name": "Grownic | 08 Content Repurposing"
+    },
+    {
+      "file": "workflows/09-marketing.json",
+      "id": "5face569bcfde9a6",
+      "name": "Grownic | 09 Marketing Experiments"
+    },
+    {
+      "file": "workflows/10-support.json",
+      "id": "3cedd3eb4fbc3bab",
+      "name": "Grownic | 10 Customer Support"
+    },
+    {
+      "file": "workflows/80-delivery-worker.json",
+      "id": "1a19b798d13efae8",
+      "name": "Grownic | 80 Delivery Worker"
+    },
+    {
+      "file": "workflows/81-followup-scheduler.json",
+      "id": "f10f3e5d757326ce",
+      "name": "Grownic | 81 Follow Up and Reminder Scheduler"
+    },
+    {
+      "file": "workflows/82-review-console.json",
+      "id": "96b8b3396b0811b3",
+      "name": "Grownic | 82 Owner Review Console"
+    },
+    {
+      "file": "workflows/83-provider-events.json",
+      "id": "2c0752d4aa20277f",
+      "name": "Grownic | 83 Verified Provider Events"
+    },
+    {
+      "file": "workflows/84-knowledge-ingest.json",
+      "id": "1683e8375ab3ae6a",
+      "name": "Grownic | 84 Approved Knowledge Ingest"
+    },
+    {
+      "file": "workflows/90-error-monitor.json",
+      "id": "36f23f2b8ad34df1",
+      "name": "Grownic | 90 Execution Error Monitor"
+    }
+  ]
+}

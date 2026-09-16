@@ -1,0 +1,14 @@
+{
+  "event_id": "demo-followup-1",
+  "operation": "enroll",
+  "contact": {
+    "name": "Alex Demo",
+    "email": "followup@example.invalid",
+    "timezone": "America/New_York",
+    "consent": true,
+    "consent_source": "Synthetic fixture; no real recipient"
+  },
+  "service": "commercial cleaning",
+  "stage": "quoted",
+  "channel": "email"
+}

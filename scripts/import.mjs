@@ -1,0 +1,4 @@
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';import {root} from './configure.mjs';
+const run=args=>{const r=spawnSync('docker',['compose','exec','-T','n8n','n8n',...args],{cwd:root,stdio:'inherit'});if(r.status!==0)throw new Error('n8n CLI failed');};
+run(['import:credentials','--input=/imports/runtime/credentials.json']);run(['import:workflow','--input=/imports/all-workflows.json']);
+if(process.argv.includes('--publish-test')){const c=JSON.parse(fs.readFileSync(path.join(root,'config/client.json')));if(c.mode!=='test'||c.outbound_enabled!==false)throw new Error('--publish-test requires test mode and outbound disabled');const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json')));for(const w of manifest.workflows)run(['publish:workflow','--id='+w.id]);console.log('Restart n8n after CLI publishing: docker compose restart n8n');}

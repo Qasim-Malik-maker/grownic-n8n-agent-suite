@@ -1,0 +1,38 @@
+{
+  "message": {
+    "type": "tool-calls",
+    "call": {
+      "id": "demo-call-1",
+      "customer": {
+        "number": "+12025550123"
+      }
+    },
+    "toolCallList": [
+      {
+        "id": "services",
+        "name": "lookup_services",
+        "arguments": {}
+      },
+      {
+        "id": "slots",
+        "name": "check_availability",
+        "arguments": {}
+      }
+    ]
+  },
+  "test_data": {
+    "upstream": {
+      "status": "success",
+      "data": {
+        "2026-09-22": [
+          {
+            "start": "2026-09-22T13:06:03.588Z"
+          },
+          {
+            "start": "2026-09-22T14:06:03.588Z"
+          }
+        ]
+      }
+    }
+  }
+}

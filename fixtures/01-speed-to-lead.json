@@ -1,0 +1,12 @@
+{
+  "event_id": "demo-speed-1",
+  "service": "commercial cleaning",
+  "source": "Demo web form",
+  "contact": {
+    "name": "Alex Demo",
+    "email": "speed@example.invalid",
+    "timezone": "America/New_York",
+    "consent": true,
+    "consent_source": "Synthetic fixture; no real recipient"
+  }
+}

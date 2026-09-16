@@ -1,0 +1,66 @@
+{
+  "event_id": "demo-marketing-1",
+  "approved_offer": "Book a service assessment. No guaranteed results or discounts.",
+  "test_data": {
+    "upstream": {
+      "data": [
+        {
+          "id": "demo-ad-1",
+          "name": "Service assessment",
+          "creative": {
+            "body": "Book a service assessment"
+          },
+          "insights": {
+            "data": [
+              {
+                "impressions": "2000",
+                "clicks": "40",
+                "spend": "100",
+                "actions": [
+                  {
+                    "action_type": "lead",
+                    "value": "5"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ai": {
+      "observations": [
+        "One synthetic ad is insufficient for a performance comparison."
+      ],
+      "variants": [
+        {
+          "headline": "Plan your next service visit",
+          "body": "Book a service assessment to discuss the work you need.",
+          "hypothesis": "Clear scope language may improve enquiry quality.",
+          "success_metric": "cost_per_lead",
+          "source_ad_ids": [
+            "demo-ad-1"
+          ]
+        },
+        {
+          "headline": "Talk through your service needs",
+          "body": "Start with a service assessment.",
+          "hypothesis": "Shorter copy may improve response.",
+          "success_metric": "ctr",
+          "source_ad_ids": [
+            "demo-ad-1"
+          ]
+        },
+        {
+          "headline": "Make the next step clear",
+          "body": "Book a service assessment and discuss your requirements.",
+          "hypothesis": "A clear next step may improve enquiries.",
+          "success_metric": "cost_per_lead",
+          "source_ad_ids": [
+            "demo-ad-1"
+          ]
+        }
+      ]
+    }
+  }
+}
